@@ -1,7 +1,20 @@
 {% extends"baseAdmin.html.twig" %}
 {% form_theme form 'bootstrap_4_layout.html.twig' %}
 {% form_theme form 'bootstrap_4_horizontal_layout.html.twig' %}
+<script type="text/javascript">
+    $(function()
+        {
+            s(#envoyer).click(function () {
+           valid = true;
 
+           return valid;
+
+            });
+
+        }
+    );
+
+</script>
 {% block content %}
 
     <div class="container">
@@ -52,7 +65,7 @@
 
 
 
-
+                   <div id="envoyer">
 
                     {{ form_rest(form) }}
 
